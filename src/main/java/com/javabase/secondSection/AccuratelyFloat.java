@@ -24,6 +24,14 @@ import java.math.BigDecimal;
  * 该方法实现两个 BigDecimal类实例对象的除法运算，并将运算结果作为方法的返回值。该方法的声明如下:public BigDecimal divide(BigDecimal divisor)
  * 参数说明
  * divisor:除法运算中的除数。
+ *
+ * 技巧：
+ * 技巧:这里创建BigDecimal类的实例时，在构造方法中一定要使用数字字符串作为参数。如果直接使用浮
+ * 点数或该类型的变量作为参数，那么构造方法接收的是经过二进制存储的浮点数，这样就会是不精确的浮点数。
+ *
+ * 心法领悟025:小心程序中的货币运算。
+ * 对于商业程序的开发，一定要注意其中的货币运算，因为计算机无法通过二进制精确地表示所有小数，所以计算机中的小数运算会有一定的误差。虽然误差非常小，
+ * 但是货币运算可能会操作多个有误差的运算结果,长期的数据累计会造成更大的误差，特别是银行使用的系统不允许任何微小的误差，所以读者应熟练掌握BigDecimal类的用法。
  * */
 public class AccuratelyFloat {
     public static void main(String[] args) {
