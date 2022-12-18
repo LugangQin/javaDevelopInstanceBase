@@ -39,10 +39,5 @@ public class RedirectOutputStream {
         }catch (Exception e){
             e.printStackTrace();
         }
-
-
     }
-
-
-
 }
