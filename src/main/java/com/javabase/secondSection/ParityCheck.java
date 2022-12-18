@@ -1,9 +1,6 @@
 package com.javabase.secondSection;
 
 import java.util.Scanner;
-
-
-
 /**
  * 关键技术：
  * 本实例的关键内容就是以三元运算符实现简单的条件判断。语法格式如下;条件运算?运算结果1:运算结果2;
@@ -25,10 +22,4 @@ public class ParityCheck {
         System.out.println(check);
 
     }
-
-
-
-
-
-
 }
